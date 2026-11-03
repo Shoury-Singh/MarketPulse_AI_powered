@@ -1,0 +1,12 @@
+pandas<4.0,>=2.2
+numpy<3.0,>=1.26
+yfinance>=0.2.60
+ccxt>=4.4
+PyYAML>=6.0
+requests>=2.31
+streamlit>=1.37
+plotly>=5.18
+
+[dev]
+pytest>=8.0
+ruff>=0.6

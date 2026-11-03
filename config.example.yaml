@@ -1,0 +1,23 @@
+project:
+  name: MarketPulse AI
+  timezone: UTC
+
+analysis:
+  timeframes: [1w, 1d, 4h, 1h, 30m, 15m, 5m]
+  swing_left: 3
+  swing_right: 3
+  order_block_lookback: 10
+
+providers:
+  twelve_data:
+    api_key_env: TWELVEDATA_API_KEY
+    gold_symbol: XAU/USD
+    intraday_intervals: [5min, 15min, 30min]
+  yahoo:
+    gold_futures_proxy: GC=F
+  crypto:
+    exchange: binance
+    ohlcv_limit: 1000
+    max_pages: 300
+  stocks:
+    provider: yfinance
